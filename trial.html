@@ -1,97 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Landing Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        /* Style for the logo */
-        .logo {
-            margin-top: 20px;
-            margin-left: 20px;
-        }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-        /* Style for the navbar */
-        .navbar {
-            margin-bottom: 0;
-            background-color: #ffffff;
-            border: none;
-        }
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+      }
 
-        /* Style for the image */
-        .center-left {
-            text-align: center;
-        }
+      nav li a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+      }
 
-        .center-left img {
-            max-width: 100%;
-            height: auto;
-        }
+      nav li a::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-in-out;
+      }
 
-        /* Style for the text */
-        .center-right {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Style for the signup button */
-        .signup-button {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 767px) {
-            .center-left {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-
-            .center-left img {
-                max-width: 100%;
-                height: auto;
-                margin-top: 20px;
-            }
-
-            .center-right {
-                text-align: center;
-                margin-top: 0;
-            }
-        }
+      nav li a:hover::after {
+        background-color: rgb(255, 0, 0);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="logo"></a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-
-    <!-- Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 center-left">
-                <img src="./images/LandingPageImage.png" alt="Image">
-            </div>
-            <div class="col-md-6 center-right">
-                <h1>Welcome to our website</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci non mauris sodales molestie.
-                    Duis sed eleifend libero, sit amet pharetra nibh. Integer ac ipsum quis purus bibendum pharetra.</p>
-            </div>
-        </div>
-    </div>
-</body>
+  </body>
 </html>
