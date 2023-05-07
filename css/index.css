@@ -1,0 +1,50 @@
+.mainBody{
+    background: #ffffff
+}
+
+.logoImg{
+    width: 50%;
+    transform: rotate(45deg);
+}
+
+
+
+
+/* Style for the image */
+.center-left {
+    text-align: center;
+}
+
+.center-left img {
+    max-width: 130%;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* Style for the text */
+.center-right {
+    text-align: center;
+    margin-top: 220px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .center-left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .center-left img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .center-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
