@@ -1,48 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+
+
+
+
+
+
+
+/* Main body */
 .mainBody{
-    background: #ffffff
+    background: #ffffff;
+    user-select: none;
 }
 
+/* Style for Logo */
 .logoImg{
-    width: 50%;
-    transform: rotate(45deg);
+        width: 55%;
+        transform: rotate(45deg);
+        margin-top: -15px;
 }
 
+/* Style for Main heading */
+.landingPageTitle{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-left: -20%;
+}
 
+.navbarFnt{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: 30px;
+}
 
+.navbarFnt::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+}
+.navbarFnt:hover{
+    color: #8623bf;
+}
+
+.navbarFnt:hover::after {
+    background-color: #8623bf;
+}
 
 /* Style for the image */
-.center-left {
+.landingPageImg {
     text-align: center;
 }
 
-.center-left img {
+.landingPageImg img {
     max-width: 130%;
     height: auto;
     margin-top: 50px;
 }
 
 /* Style for the text */
-.center-right {
-    text-align: center;
-    margin-top: 220px;
+.landingPageTxt {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 150px;
+}
+
+.landingPageRegisterBtn{
+    width: 150px;
+    margin-left: 200px;
+    margin-top: -30px;
+    color: #8623bf;
+    border-color: #8623bf;
+}
+
+.landingPageRegisterBtn:hover {
+    background-color: #8623bf;
+    border-color: #8623bf;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
-    .center-left {
+    .landingPageImg {
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .center-left img {
+    .landingPageImg img {
         max-width: 100%;
         height: auto;
         margin-top: 20px;
     }
 
-    .center-right {
-        text-align: center;
+    .landingPageTxt {
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
         margin-top: 20px;
+    }
+
+    .landingPageRegisterBtn {
+        margin-left: 100px;
+    }
+
+    .landingPageTitle {
+        font-family: 'Pacifico', cursive;
+        font-size: 2.5rem;
+        margin-left: -40%;
+        width: 100px;
+    }
+
+    /* hiding effect of dot in mobile view */
+    .navbarFnt::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: transparent;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-in-out;
     }
 }
 
