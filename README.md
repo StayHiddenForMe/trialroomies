@@ -19,16 +19,16 @@
                     <a href="#">
                         <img class="logoImg" src="./images/fist-bump 128.png">
                     </a>
-                    <!-- <a class="navbar-brand">Roomies</a> -->
+                    <a class="navbar-brand"><p class="landingPageTitle">Roomies</p></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto px-3">
-                            <a class="nav-link" href="#">About Us</a>
-                            <a class="nav-link" href="#">Contact Us</a>
-                            <a class="nav-link" href="#">Login</a>
+                        <div class="navbar-nav ms-auto px-5">
+                            <a class="nav-link navbarFnt" href="#">About Us</a>
+                            <a class="nav-link navbarFnt" href="#">Contact Us</a>
+                            <a class="nav-link navbarFnt" href="#">Login</a>
                         </div>
                     </div>
                 </div>
@@ -38,12 +38,13 @@
         <!-- Landing Page -->
         <div class="container">
             <div class="row">
-                <div class="col-md-6 center-right">
-                    <h1>Finding a Roommate Has Never Been This Easy</h1>
+                <div class="col-md-6 landingPageTxt">
+                    <p>Finding a Roommate Has Never Been This Easy...!!</p>
                 </div>
-                <div class="col-md-6 center-left">
+                <div class="col-md-6 landingPageImg">
                     <img src="./images/LandingPageImage.png" alt="Image">
                 </div>
+                <button type="button" class="btn btn-outline-primary landingPageRegisterBtn">Sign Up</button>
             </div>
         </div>
     </div>
