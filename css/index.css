@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
 /* Main body */
@@ -71,24 +66,31 @@
 
 /* Style for the text */
 .landingPageTxt {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Righteous', cursive;
     font-size: 3.2rem;
-    font-weight: 600;
+    font-weight: 300;
     text-align: left;
     margin-top: 150px;
 }
 
 .landingPageRegisterBtn{
-    width: 150px;
-    margin-left: 200px;
-    margin-top: -30px;
+    width: 20%;
     color: #8623bf;
     border-color: #8623bf;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
 
 .landingPageRegisterBtn:hover {
     background-color: #8623bf;
     border-color: #8623bf;
+    color: white;
+}
+
+.landingPageRegisterBtn:focus {
+    background-color: #8623bf;
+    border-color: #8623bf;
+    color: white;
 }
 
 /* Media query for mobile devices */
@@ -113,7 +115,7 @@
     }
 
     .landingPageRegisterBtn {
-        margin-left: 100px;
+        width: 50%;
     }
 
     .landingPageTitle {
