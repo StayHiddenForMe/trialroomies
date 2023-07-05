@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Finder - Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/explore.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 pl-lg-0">
+                <div class="sidebar">
+                    <div class="logo">
+                        <img src="./images/fist-bump 128.png" alt="Logo">
+                    </div>
+                    <div class="sidebar-nav">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Bookmark</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 pl-lg-0">
+                <main>
+                    <section class="search-results">
+                        <div class="container">
+                            <h2>Swipe Through to Find Your Roommate</h2>
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper" id="roommateList">
+                                    <!-- Roommate profiles will be dynamically populated here -->
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupOverlay">
+        <div id="popupProfile">
+            <div class="popupContent">
+                <img id="popupImage" src="" alt="Profile Image">
+                <div class="info">
+                    <h3 id="popupName"></h3>
+                    <p id="popupAge"></p>
+                    <p id="popupLocation"></p>
+                    <p id="popupBudget"></p>
+                    <a href="#" class="contact-button">Contact</a>
+                </div>
+            </div>
+            <div id="closeButton">&times;</div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/explore.js"></script>
+</body>
+</html>

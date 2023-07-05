@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/8e26b4230d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mainBody">
+    <!-- Navbar -->
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container" style="padding-top: 10px;">
+                    <a href="./index.html">
+                        <img class="logoImg" src="./images/fist-bump 128.png" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto px-5">
+                            <a class="nav-link navbarFnt" href="./aboutUs.html">About Us</a>
+                            <a class="nav-link navbarFnt" href="./contactUs.html">Contact Us</a>
+                            <a class="nav-link navbarFnt" href="#" data-bs-toggle="modal" id="iloginButton" data-bs-target="#loginModal">
+                                Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- Navbar ends -->
+    <div class="container1">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-6 text-center">
+                <h2 class="abtHeading">About Us</h2>
+                <p class="abtDesc">We are a group of individuals who are passionate about helping people find their
+                    perfect roommates. Our mission is to make the process of finding a roommate easy, convenient, and
+                    stress-free. With our platform, you can search for potential roommates based on shared interests,
+                    lifestyle, and more. We believe that having a good roommate can make a huge difference in your life,
+                    and we want to help you find that special someone.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="abtImg" src="./images/aboutus-final.png" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Login Page -->
+    <section>
+        <div class="popup">
+            <div class="popup-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col_md_6 l_imageAlign">
+                            <img src="./images/login.png" alt="" class="l_image">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <div class="l_login-container">
+                                    <p class="l_title">
+                                        Welcome Back
+                                    </p>
+                                    <div class="l_seperator">
+                                        <!-- <p class="l_wel_msg">
+                                            Provide your details
+                                        </p> -->
+                                        <form action="" class="l_login-form">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control shadow-none l_inputBarDecor"
+                                                    id="floatingInputUsername" placeholder="name@example.com">
+                                                <label for="floatingInput"><i
+                                                        class="fa-solid fa-user l_iconAlign"></i>Email address</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control shadow-none l_inputBarDecor"
+                                                    id="floatingInputPassword" placeholder="name@example.com">
+                                                <label for="floatingInput"><i
+                                                        class="fa-solid fa-lock l_iconAlign"></i>Password</label>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="l_forgotPwd">Forgot Password ?</a>
+                                            </div>
+                                            <button type="submit" class="l_submit">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./images/icons8-close-30.png" alt="Close" class="closeButton" />
+            </div>
+        </div>
+    </section>
+    <!-- Login Page Ends-->
+
+
+
+    <!-- My Script -->
+    <script src="./js/index.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
